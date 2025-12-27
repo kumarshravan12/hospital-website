@@ -1,0 +1,352 @@
+/* Header css section  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 35px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* LOGO */
+.logo {
+  height: 40px;
+  cursor: pointer;
+  margin-left: 100px;
+    
+}
+
+/* NAV */
+.header-nav {
+  display: flex;
+  gap: 25px;
+
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* RIGHT */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.chat-btn {
+  background: white;
+  border: 3px solid #f04e30;
+  color: #f04e30;
+  padding: 10px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.call-btn {
+  background: #f04e30;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* MOBILE MENU ICON */
+.menu-toggle {
+  display: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width: 1024px) {
+  .header-nav {
+    gap: 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: white;
+    flex-direction: column;
+    border-top: 1px solid #ddd;
+  }
+
+  .header-nav a {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .call-btn {
+    display: none;
+  }
+  
+}
+h1 {
+  padding: 40px;
+  text-align: center;
+}
+/* ================= CONTACT SECTION ================= */
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+    padding: 40px 25px;
+  }
+
+  .contact-map,
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-form .row {
+    flex-direction: column;
+  }
+}
+
+/* =====================  FOOTER ===================== */
+.footer {
+  background: #ffffff;
+  border-top: 1px solid #e5e5e5;
+  margin-top: 200px;
+}
+
+/* FOOTER GRID */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  padding: 60px 70px;
+}
+
+/* LEFT */
+.footer-left {
+  width: 65%;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #555;
+  font-weight: bold;
+}
+
+/* MIDDLE */
+.footer-right {
+  width: 25%;
+}
+
+.footer-right h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.footer-right ul {
+  list-style: none;
+}
+
+.footer-right li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #666;
+  cursor: pointer;
+}
+
+.footer-right li:hover {
+  color: #f04e30;
+}
+
+/* RIGHT APP SECTION */
+.footer-app {
+  width: 20%;
+  text-align: center;  
+}
+
+.footer-app h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.app-text {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* STORE BUTTONS */
+.store-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border: 1px solid #e5e5e5;
+  padding: 14px;
+  border-radius: 14px;            
+  margin-bottom: 14px;
+  text-decoration: none;
+  color: #666;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06); 
+  transition: 0.3s;
+}
+
+.store-btn i {
+  font-size: 22px;
+}
+
+.store-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+/* EMERGENCY */
+.emergency-btn {
+  display: block;
+  width: 100%;              
+  margin-top: 25px;
+  background: #f04e30;
+  color: #fff;
+  text-align: center;
+  padding: 16px;
+  border-radius: 16px;       
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 6px 18px rgba(240,78,48,0.35);
+}
+
+
+/* =====================
+   SOCIAL ICONS
+===================== */
+.footer-social {
+  text-align: center;
+  padding: 25px 0 10px;
+}
+
+.footer-social i {
+  font-size: 20px;
+  margin: 0 12px;
+  color: #444;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer-social i:hover {
+  color: #f04e30;
+}
+
+/* =====================
+   COPYRIGHT
+===================== */
+.footer-bottom {
+  border-top: 1px solid #e5e5e5;
+  text-align: center;
+  padding: 18px;
+  font-size: 13px;
+  color: #777;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 1024px) {
+  .footer-container {
+    padding: 50px 40px;
+    gap: 40px;
+  }
+
+  .header-nav {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* HEADER */
+  .header-nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    flex-direction: column;
+    border-top: 1px solid #ddd;
+  }
+
+  .header-nav a {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .call-btn {
+    display: none;
+  }
+
+  /* FOOTER */
+  .footer-container {
+    flex-direction: column;
+    padding: 40px 25px;
+  }
+
+  .footer-left,
+  .footer-right,
+  .footer-app {
+    width: 100%;
+  }
+
+  .footer-app {
+    margin-top: 30px;
+  }
+}
+/* APP SECTION ENTRY ANIMATION */
+.animate-app {
+  animation: fadeUp 1s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.success-msg {
+  display: none;
+  margin-top: 12px;
+  color: green;
+  font-size: 14px;
+  font-weight: 500;
+}
+
